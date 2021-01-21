@@ -177,3 +177,32 @@ footer {
     border-top: solid 5px #BE3144;
     font-size: 18px;
 }
+
+@media (max-width: 900px) {
+    .nav-container {
+        position: absolute;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 100px;
+    }
+
+    .projects-container img {
+        height: 300px;
+    }
+
+    .button-showAll {
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+
+    footer {
+        display: flex;
+        padding: 15px 0px;
+        font-size: 16px;
+        flex-direction: column;
+        line-height: 1.6;
+        align-items: center;
+    }
+}
